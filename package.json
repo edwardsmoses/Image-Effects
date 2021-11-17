@@ -16,6 +16,7 @@
     "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.6.0",
     "html-webpack-plugin": "^5.5.0"
   }
 }
