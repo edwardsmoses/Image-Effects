@@ -9,5 +9,9 @@ pub fn grayscale(encoded_file: &str){
 
     let base64_to_vector = decode(encoded_file).unwrap();
 
-    let img = load_from_memory(&base64_to_vector).unwrap();
+    let mut img = load_from_memory(&base64_to_vector).unwrap();
+
+    img = img.grayscale();
+    j_log(&"Grayscale effect applied".into());
+
 }
